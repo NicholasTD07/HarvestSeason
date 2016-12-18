@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6682EC01ECD9DA35455302 /* Pods_HarvestSeason.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D8A6F0AC239E5C5137809A /* Pods_HarvestSeason.framework */; };
+		5DB18D28B6F0AC6F3E906234 /* Pods_HarvestSeasonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3E942FBD653BF653356236 /* Pods_HarvestSeasonTests.framework */; };
 		6C64B9D41E074B53004576A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9D31E074B53004576A9 /* AppDelegate.swift */; };
 		6C64B9D61E074B53004576A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9D51E074B53004576A9 /* ViewController.swift */; };
 		6C64B9D91E074B53004576A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C64B9D71E074B53004576A9 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		6C64B9DE1E074B53004576A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C64B9DC1E074B53004576A9 /* LaunchScreen.storyboard */; };
 		6C64B9E91E074B53004576A9 /* HarvestSeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9E81E074B53004576A9 /* HarvestSeasonTests.swift */; };
 		6C64B9F41E074B53004576A9 /* HarvestSeasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9F31E074B53004576A9 /* HarvestSeasonUITests.swift */; };
+		DCF6FB3715D6E244881CFE04 /* Pods_HarvestSeasonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065D49E412D95572E89BA70C /* Pods_HarvestSeasonUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		065D49E412D95572E89BA70C /* Pods_HarvestSeasonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarvestSeasonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D8A6F0AC239E5C5137809A /* Pods_HarvestSeason.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarvestSeason.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		462BC6E93842F34F8572F729 /* Pods-HarvestSeasonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvestSeasonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarvestSeasonUITests/Pods-HarvestSeasonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F1C1B87525A65A82B949E09 /* Pods-HarvestSeason.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvestSeason.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarvestSeason/Pods-HarvestSeason.debug.xcconfig"; sourceTree = "<group>"; };
 		6C64B9D01E074B53004576A9 /* HarvestSeason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarvestSeason.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C64B9D31E074B53004576A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C64B9D51E074B53004576A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,11 @@
 		6C64B9EF1E074B53004576A9 /* HarvestSeasonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvestSeasonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C64B9F31E074B53004576A9 /* HarvestSeasonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestSeasonUITests.swift; sourceTree = "<group>"; };
 		6C64B9F51E074B53004576A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3E942FBD653BF653356236 /* Pods_HarvestSeasonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarvestSeasonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91B38876BF5DDEB5296B49A /* Pods-HarvestSeasonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvestSeasonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarvestSeasonUITests/Pods-HarvestSeasonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E3789A309F3C958AB21577E7 /* Pods-HarvestSeason.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvestSeason.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarvestSeason/Pods-HarvestSeason.release.xcconfig"; sourceTree = "<group>"; };
+		EED8DB33034070A088603D4A /* Pods-HarvestSeasonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvestSeasonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HarvestSeasonTests/Pods-HarvestSeasonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F12353A01718D05B2259536C /* Pods-HarvestSeasonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvestSeasonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarvestSeasonTests/Pods-HarvestSeasonTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6682EC01ECD9DA35455302 /* Pods_HarvestSeason.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB18D28B6F0AC6F3E906234 /* Pods_HarvestSeasonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF6FB3715D6E244881CFE04 /* Pods_HarvestSeasonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				6C64B9E71E074B53004576A9 /* HarvestSeasonTests */,
 				6C64B9F21E074B53004576A9 /* HarvestSeasonUITests */,
 				6C64B9D11E074B53004576A9 /* Products */,
+				DFC5ABE5BA8CCF9A006A224B /* Pods */,
+				D73B9FDFD8BFC64AF014069B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = HarvestSeasonUITests;
 			sourceTree = "<group>";
 		};
+		D73B9FDFD8BFC64AF014069B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33D8A6F0AC239E5C5137809A /* Pods_HarvestSeason.framework */,
+				9D3E942FBD653BF653356236 /* Pods_HarvestSeasonTests.framework */,
+				065D49E412D95572E89BA70C /* Pods_HarvestSeasonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFC5ABE5BA8CCF9A006A224B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C1B87525A65A82B949E09 /* Pods-HarvestSeason.debug.xcconfig */,
+				E3789A309F3C958AB21577E7 /* Pods-HarvestSeason.release.xcconfig */,
+				EED8DB33034070A088603D4A /* Pods-HarvestSeasonTests.debug.xcconfig */,
+				F12353A01718D05B2259536C /* Pods-HarvestSeasonTests.release.xcconfig */,
+				462BC6E93842F34F8572F729 /* Pods-HarvestSeasonUITests.debug.xcconfig */,
+				D91B38876BF5DDEB5296B49A /* Pods-HarvestSeasonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C64B9F81E074B53004576A9 /* Build configuration list for PBXNativeTarget "HarvestSeason" */;
 			buildPhases = (
+				7A1428957C259F66BB4F6BFE /* [CP] Check Pods Manifest.lock */,
 				6C64B9CC1E074B53004576A9 /* Sources */,
 				6C64B9CD1E074B53004576A9 /* Frameworks */,
 				6C64B9CE1E074B53004576A9 /* Resources */,
+				FDFCAE398EF9EBA52AF4BD06 /* [CP] Embed Pods Frameworks */,
+				25464AD983A92C9134BD1379 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C64B9FB1E074B53004576A9 /* Build configuration list for PBXNativeTarget "HarvestSeasonTests" */;
 			buildPhases = (
+				C1B96728FDB240DFDB9E362C /* [CP] Check Pods Manifest.lock */,
 				6C64B9E01E074B53004576A9 /* Sources */,
 				6C64B9E11E074B53004576A9 /* Frameworks */,
 				6C64B9E21E074B53004576A9 /* Resources */,
+				CA8C57A25A298DBC77DD9A27 /* [CP] Embed Pods Frameworks */,
+				B9492056CE70B76E22F73D3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C64B9FE1E074B53004576A9 /* Build configuration list for PBXNativeTarget "HarvestSeasonUITests" */;
 			buildPhases = (
+				A3F289DF15AB4690CF1E3A33 /* [CP] Check Pods Manifest.lock */,
 				6C64B9EB1E074B53004576A9 /* Sources */,
 				6C64B9EC1E074B53004576A9 /* Frameworks */,
 				6C64B9ED1E074B53004576A9 /* Resources */,
+				3891575C45E128AC715EB5C9 /* [CP] Embed Pods Frameworks */,
+				F3EBFEAB2393F455575A63E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25464AD983A92C9134BD1379 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarvestSeason/Pods-HarvestSeason-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3891575C45E128AC715EB5C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarvestSeasonUITests/Pods-HarvestSeasonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A1428957C259F66BB4F6BFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F289DF15AB4690CF1E3A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9492056CE70B76E22F73D3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarvestSeasonTests/Pods-HarvestSeasonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B96728FDB240DFDB9E362C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA8C57A25A298DBC77DD9A27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarvestSeasonTests/Pods-HarvestSeasonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3EBFEAB2393F455575A63E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarvestSeasonUITests/Pods-HarvestSeasonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDFCAE398EF9EBA52AF4BD06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HarvestSeason/Pods-HarvestSeason-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C64B9CC1E074B53004576A9 /* Sources */ = {
@@ -410,6 +597,7 @@
 		};
 		6C64B9F91E074B53004576A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F1C1B87525A65A82B949E09 /* Pods-HarvestSeason.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HarvestSeason/Info.plist;
@@ -422,6 +610,7 @@
 		};
 		6C64B9FA1E074B53004576A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3789A309F3C958AB21577E7 /* Pods-HarvestSeason.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HarvestSeason/Info.plist;
@@ -434,8 +623,8 @@
 		};
 		6C64B9FC1E074B53004576A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EED8DB33034070A088603D4A /* Pods-HarvestSeasonTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HarvestSeasonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -448,8 +637,8 @@
 		};
 		6C64B9FD1E074B53004576A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F12353A01718D05B2259536C /* Pods-HarvestSeasonTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HarvestSeasonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -462,8 +651,8 @@
 		};
 		6C64B9FF1E074B53004576A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 462BC6E93842F34F8572F729 /* Pods-HarvestSeasonUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = HarvestSeasonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.HarvestSeasonUITests;
@@ -475,8 +664,8 @@
 		};
 		6C64BA001E074B53004576A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91B38876BF5DDEB5296B49A /* Pods-HarvestSeasonUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = HarvestSeasonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.HarvestSeasonUITests;
@@ -505,6 +694,7 @@
 				6C64B9FA1E074B53004576A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C64B9FB1E074B53004576A9 /* Build configuration list for PBXNativeTarget "HarvestSeasonTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +703,7 @@
 				6C64B9FD1E074B53004576A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C64B9FE1E074B53004576A9 /* Build configuration list for PBXNativeTarget "HarvestSeasonUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +712,7 @@
 				6C64BA001E074B53004576A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
