@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UnauthedViewController.swift
 //  HarvestSeason
 //
 //  Created by Nicholas Tian on 19/12/2016.
@@ -12,7 +12,7 @@ import JTAppleCalendar
 
 import HarvestAPI
 
-class ViewController: UIViewController {
+class UnauthedViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
 
     @IBOutlet weak var check: UIButton!
@@ -61,7 +61,7 @@ let white = UIColor(colorWithHexValue: 0xECEAED)
 let darkPurple = UIColor(colorWithHexValue: 0x3A284C)
 let dimPurple = UIColor(colorWithHexValue: 0x574865)
 
-extension ViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
+extension UnauthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
         let myCustomCell = cell as! CellView
 

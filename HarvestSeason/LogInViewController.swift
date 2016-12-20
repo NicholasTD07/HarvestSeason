@@ -1,5 +1,5 @@
 //
-//  LogInViewController.swift
+//  LogInUnauthedViewController.swift
 //  HarvestSeason
 //
 //  Created by Nicholas Tian on 20/12/2016.

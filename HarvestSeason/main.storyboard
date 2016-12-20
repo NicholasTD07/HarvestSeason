@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Unauthed View Controller-->
         <scene sceneID="sAO-rI-P6L">
             <objects>
-                <viewController id="tBe-0u-HLw" customClass="ViewController" customModule="HarvestSeason" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tBe-0u-HLw" customClass="UnauthedViewController" customModule="HarvestSeason" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Srg-sc-jQO"/>
                         <viewControllerLayoutGuide type="bottom" id="b3C-rC-XUg"/>
