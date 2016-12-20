@@ -15,10 +15,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        var api: APIType?
-        var user: Model.User?
-        var projects: [Model.Project]?
     }
 }
 

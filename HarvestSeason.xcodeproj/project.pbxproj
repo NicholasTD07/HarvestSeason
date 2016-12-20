@@ -15,6 +15,7 @@
 		6C64B9DE1E074B53004576A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C64B9DC1E074B53004576A9 /* LaunchScreen.storyboard */; };
 		6C64B9E91E074B53004576A9 /* HarvestSeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9E81E074B53004576A9 /* HarvestSeasonTests.swift */; };
 		6C64B9F41E074B53004576A9 /* HarvestSeasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9F31E074B53004576A9 /* HarvestSeasonUITests.swift */; };
+		6CA57BA91E08BA7000E95B3C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA57BA81E08BA7000E95B3C /* main.storyboard */; };
 		DCF6FB3715D6E244881CFE04 /* Pods_HarvestSeasonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065D49E412D95572E89BA70C /* Pods_HarvestSeasonUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		6C64B9EF1E074B53004576A9 /* HarvestSeasonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvestSeasonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C64B9F31E074B53004576A9 /* HarvestSeasonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestSeasonUITests.swift; sourceTree = "<group>"; };
 		6C64B9F51E074B53004576A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA57BA81E08BA7000E95B3C /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		9D3E942FBD653BF653356236 /* Pods_HarvestSeasonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarvestSeasonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91B38876BF5DDEB5296B49A /* Pods-HarvestSeasonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvestSeasonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarvestSeasonUITests/Pods-HarvestSeasonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E3789A309F3C958AB21577E7 /* Pods-HarvestSeason.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarvestSeason.release.xcconfig"; path = "Pods/Target Support Files/Pods-HarvestSeason/Pods-HarvestSeason.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				6C64B9DA1E074B53004576A9 /* Assets.xcassets */,
 				6C64B9DC1E074B53004576A9 /* LaunchScreen.storyboard */,
 				6C64B9DF1E074B53004576A9 /* Info.plist */,
+				6CA57BA81E08BA7000E95B3C /* main.storyboard */,
 			);
 			path = HarvestSeason;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C64B9DE1E074B53004576A9 /* LaunchScreen.storyboard in Resources */,
+				6CA57BA91E08BA7000E95B3C /* main.storyboard in Resources */,
 				6C64B9DB1E074B53004576A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
