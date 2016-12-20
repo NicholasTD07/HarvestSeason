@@ -16,6 +16,8 @@
 		6C64B9E91E074B53004576A9 /* HarvestSeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9E81E074B53004576A9 /* HarvestSeasonTests.swift */; };
 		6C64B9F41E074B53004576A9 /* HarvestSeasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9F31E074B53004576A9 /* HarvestSeasonUITests.swift */; };
 		6C7798F01E08E7EB008C017D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7798EF1E08E7EB008C017D /* LogInViewController.swift */; };
+		6C7798F21E08ED47008C017D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7798F11E08ED47008C017D /* State.swift */; };
+		6C7798F41E08F8EB008C017D /* AuthedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7798F31E08F8EB008C017D /* AuthedViewController.swift */; };
 		6CA57BA91E08BA7000E95B3C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA57BA81E08BA7000E95B3C /* main.storyboard */; };
 		6CA57BAB1E08CF2500E95B3C /* CalendarDayCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA57BAA1E08CF2500E95B3C /* CalendarDayCellView.xib */; };
 		6CA57BAD1E08CF9D00E95B3C /* CalendarDayCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA57BAC1E08CF9D00E95B3C /* CalendarDayCellView.swift */; };
@@ -57,6 +59,8 @@
 		6C64B9F31E074B53004576A9 /* HarvestSeasonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestSeasonUITests.swift; sourceTree = "<group>"; };
 		6C64B9F51E074B53004576A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C7798EF1E08E7EB008C017D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		6C7798F11E08ED47008C017D /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		6C7798F31E08F8EB008C017D /* AuthedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthedViewController.swift; sourceTree = "<group>"; };
 		6CA57BA81E08BA7000E95B3C /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		6CA57BAA1E08CF2500E95B3C /* CalendarDayCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarDayCellView.xib; path = ../CalendarDayCellView.xib; sourceTree = "<group>"; };
 		6CA57BAC1E08CF9D00E95B3C /* CalendarDayCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayCellView.swift; sourceTree = "<group>"; };
@@ -120,15 +124,17 @@
 		6C64B9D21E074B53004576A9 /* HarvestSeason */ = {
 			isa = PBXGroup;
 			children = (
+				6C7798F11E08ED47008C017D /* State.swift */,
 				6C64B9D31E074B53004576A9 /* AppDelegate.swift */,
 				6C64B9D51E074B53004576A9 /* UnauthedViewController.swift */,
+				6C7798F31E08F8EB008C017D /* AuthedViewController.swift */,
 				6C7798EF1E08E7EB008C017D /* LogInViewController.swift */,
-				6C64B9DA1E074B53004576A9 /* Assets.xcassets */,
-				6C64B9DC1E074B53004576A9 /* LaunchScreen.storyboard */,
-				6C64B9DF1E074B53004576A9 /* Info.plist */,
-				6CA57BA81E08BA7000E95B3C /* main.storyboard */,
 				6CA57BAA1E08CF2500E95B3C /* CalendarDayCellView.xib */,
 				6CA57BAC1E08CF9D00E95B3C /* CalendarDayCellView.swift */,
+				6CA57BA81E08BA7000E95B3C /* main.storyboard */,
+				6C64B9DC1E074B53004576A9 /* LaunchScreen.storyboard */,
+				6C64B9DA1E074B53004576A9 /* Assets.xcassets */,
+				6C64B9DF1E074B53004576A9 /* Info.plist */,
 			);
 			path = HarvestSeason;
 			sourceTree = "<group>";
@@ -457,8 +463,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C7798F01E08E7EB008C017D /* LogInViewController.swift in Sources */,
+				6C7798F41E08F8EB008C017D /* AuthedViewController.swift in Sources */,
 				6C64B9D61E074B53004576A9 /* UnauthedViewController.swift in Sources */,
 				6C64B9D41E074B53004576A9 /* AppDelegate.swift in Sources */,
+				6C7798F21E08ED47008C017D /* State.swift in Sources */,
 				6CA57BAD1E08CF9D00E95B3C /* CalendarDayCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

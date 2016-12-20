@@ -1,8 +1,8 @@
 //
-//  UnauthedViewController.swift
+//  AuthedViewController.swift
 //  HarvestSeason
 //
-//  Created by Nicholas Tian on 19/12/2016.
+//  Created by Nicholas Tian on 20/12/2016.
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
@@ -12,8 +12,11 @@ import JTAppleCalendar
 
 import HarvestAPI
 
-class UnauthedViewController: UIViewController {
+class AuthedViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
+
+    @IBOutlet weak var welcomeUser: UILabel!
+    @IBOutlet weak var loggedInUser: UILabel!
 
     @IBOutlet weak var check: UIButton!
     @IBOutlet weak var fill: UIButton!
@@ -21,39 +24,22 @@ class UnauthedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        store.subscribe { [weak self] state in
-            guard state != nil else { return }
-            guard let `self` = self else { return }
-
-            let auth = UIStoryboard(name: "main", bundle: nil).instantiateViewController(withIdentifier: "auth")
-
-            self.dismiss(animated: true, completion: nil)
-            self.present(auth, animated: false, completion: nil)
-        }
-
-
         let style = NSMutableParagraphStyle()
         style.alignment = .center
 
+        store.subscribe { [weak self] state in
+            guard let `self` = self else { return }
 
-        check.setAttributedTitle(
-            NSAttributedString(
-                string: "Check\nTimetable",
+            self.welcomeUser.attributedText = NSAttributedString(
+                string: "Welcome,\n\(state.user.name)",
                 attributes: [
-                    NSForegroundColorAttributeName: UIColor.gray,
+                    NSForegroundColorAttributeName: UIColor.black,
                     NSParagraphStyleAttributeName: style,
-                    ]),
-            for: .disabled)
+                    ]
+            )
 
-        fill.setAttributedTitle(
-            NSAttributedString(
-                string: "Auto-fill\nTimetable",
-                attributes: [
-                    NSForegroundColorAttributeName: UIColor.gray,
-                    NSParagraphStyleAttributeName: style,
-                    ]),
-            for: .disabled)
-
+            self.loggedInUser.text = "Logged in as \(state.user.name)"
+        }
 
         calendarView.dataSource = self
         calendarView.delegate = self
@@ -66,7 +52,13 @@ class UnauthedViewController: UIViewController {
 private let textColorForThisMonth = UIColor(colorWithHexValue: 0xECEAED)
 private let textColorForNotThisMonth = UIColor(colorWithHexValue: 0x574865)
 
-extension UnauthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
+typealias CellView = CalendarDayCellView
+
+let white = UIColor(colorWithHexValue: 0xECEAED)
+let darkPurple = UIColor(colorWithHexValue: 0x3A284C)
+let dimPurple = UIColor(colorWithHexValue: 0x574865)
+
+extension AuthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
         let myCustomCell = cell as! CellView
 
