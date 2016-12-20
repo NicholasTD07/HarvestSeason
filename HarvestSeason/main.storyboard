@@ -6,13 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="sAO-rI-P6L">
             <objects>
-                <viewController id="tBe-0u-HLw" sceneMemberID="viewController">
+                <viewController id="tBe-0u-HLw" customClass="ViewController" customModule="HarvestSeason" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Srg-sc-jQO"/>
                         <viewControllerLayoutGuide type="bottom" id="b3C-rC-XUg"/>
@@ -20,12 +22,266 @@
                     <view key="view" contentMode="scaleToFill" id="dNB-st-W5b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXj-h5-TVq" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                <rect key="frame" x="16" y="161.5" width="343" height="343"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RXj-h5-TVq" secondAttribute="height" multiplier="1:1" id="2pw-98-fzP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZk-q1-iUk">
+                                <rect key="frame" x="94" y="20" width="187" height="141.5"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Hi there,
+log in to check timetable or
+fill up it in 1-click!
+</string>
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxI-90-mkQ">
+                                <rect key="frame" x="16" y="504.5" width="343" height="132.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kar-z2-9lQ">
+                                        <rect key="frame" x="0.0" y="43.5" width="171.5" height="47"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">Check
+Timetable</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="28">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="56">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="84">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="112">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="140">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="168">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="196">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="224">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="252">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="280">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="308">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="336">
+                                                                    <options/>
+                                                                </textTab>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="disabled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">Check
+Timetable</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WBm-IF-V4y">
+                                        <rect key="frame" x="171.5" y="43" width="171.5" height="47"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">Auto-Fill
+Timetable</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="28">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="56">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="84">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="112">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="140">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="168">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="196">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="224">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="252">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="280">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="308">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="336">
+                                                                    <options/>
+                                                                </textTab>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <state key="disabled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">Auto-Fill
+Timetable</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="28">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="56">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="84">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="112">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="140">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="168">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="196">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="224">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="252">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="280">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="308">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="336">
+                                                                    <options/>
+                                                                </textTab>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="WBm-IF-V4y" firstAttribute="leading" secondItem="Kar-z2-9lQ" secondAttribute="trailing" id="DoC-ty-npK"/>
+                                    <constraint firstItem="Kar-z2-9lQ" firstAttribute="leading" secondItem="mxI-90-mkQ" secondAttribute="leading" id="JbX-9n-SFm"/>
+                                    <constraint firstItem="WBm-IF-V4y" firstAttribute="centerY" secondItem="mxI-90-mkQ" secondAttribute="centerY" id="RZa-HL-7sK"/>
+                                    <constraint firstAttribute="trailing" secondItem="WBm-IF-V4y" secondAttribute="trailing" id="ppX-zG-hV7"/>
+                                    <constraint firstItem="Kar-z2-9lQ" firstAttribute="width" secondItem="WBm-IF-V4y" secondAttribute="width" id="w2Z-0q-q0c"/>
+                                    <constraint firstItem="Kar-z2-9lQ" firstAttribute="centerY" secondItem="mxI-90-mkQ" secondAttribute="centerY" id="x2x-6t-mJ8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFy-9U-hFj">
+                                <rect key="frame" x="16" y="637" width="343" height="30"/>
+                                <state key="normal" title="Log in to check timetable or fill it up"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="RXj-h5-TVq" secondAttribute="trailing" id="1bb-bf-bxb"/>
+                            <constraint firstItem="RXj-h5-TVq" firstAttribute="top" secondItem="hZk-q1-iUk" secondAttribute="bottom" id="3ul-qt-pI9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yFy-9U-hFj" secondAttribute="trailing" id="5cg-yE-aRR"/>
+                            <constraint firstItem="RXj-h5-TVq" firstAttribute="centerX" secondItem="dNB-st-W5b" secondAttribute="centerX" id="7qj-EH-htR"/>
+                            <constraint firstItem="RXj-h5-TVq" firstAttribute="centerY" secondItem="dNB-st-W5b" secondAttribute="centerY" id="EER-Or-L7C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mxI-90-mkQ" secondAttribute="trailing" id="F8G-1p-lWV"/>
+                            <constraint firstItem="hZk-q1-iUk" firstAttribute="centerX" secondItem="dNB-st-W5b" secondAttribute="centerX" id="HIZ-H7-HPx"/>
+                            <constraint firstItem="hZk-q1-iUk" firstAttribute="top" secondItem="Srg-sc-jQO" secondAttribute="bottom" id="aYg-Zo-GlB"/>
+                            <constraint firstItem="yFy-9U-hFj" firstAttribute="leading" secondItem="dNB-st-W5b" secondAttribute="leadingMargin" id="aoh-9o-cRa"/>
+                            <constraint firstItem="RXj-h5-TVq" firstAttribute="leading" secondItem="dNB-st-W5b" secondAttribute="leadingMargin" id="eev-hC-YFn"/>
+                            <constraint firstItem="b3C-rC-XUg" firstAttribute="top" secondItem="yFy-9U-hFj" secondAttribute="bottom" id="h7e-ur-SVY"/>
+                            <constraint firstItem="yFy-9U-hFj" firstAttribute="top" secondItem="mxI-90-mkQ" secondAttribute="bottom" id="lnA-fi-xVn"/>
+                            <constraint firstItem="mxI-90-mkQ" firstAttribute="top" secondItem="RXj-h5-TVq" secondAttribute="bottom" id="qN5-Lp-lR2"/>
+                            <constraint firstItem="mxI-90-mkQ" firstAttribute="leading" secondItem="dNB-st-W5b" secondAttribute="leadingMargin" id="wU2-Wk-Ayc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calendarView" destination="RXj-h5-TVq" id="IO9-7E-r9P"/>
+                        <outlet property="check" destination="Kar-z2-9lQ" id="cTZ-8y-kAo"/>
+                        <outlet property="fill" destination="WBm-IF-V4y" id="eDX-Dc-CzG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2k-xc-b6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="146" y="324"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9sh-Ec-1Fy">
+            <objects>
+                <viewController id="F11-Zi-bOE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pn4-0D-7Va"/>
+                        <viewControllerLayoutGuide type="bottom" id="1bA-nR-nc9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Blt-Xi-ejZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXt-r6-ebf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="332"/>
         </scene>
     </scenes>
 </document>
