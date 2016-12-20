@@ -6,6 +6,8 @@ target 'HarvestSeason' do
 
   # Pods for HarvestSeason
   pod 'Eureka', '~> 2.0.0-beta.1'
+  pod 'HarvestAPI', :path => '~/proj/HarvestAPI/'
+  pod 'SnapKit'
 
   target 'HarvestSeasonTests' do
     inherit! :search_paths
