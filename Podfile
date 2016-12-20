@@ -5,7 +5,7 @@ target 'HarvestSeason' do
   use_frameworks!
 
   # Pods for HarvestSeason
-  pod 'Eureka', '~> 2.0.0-beta.1'
+  pod 'JTAppleCalendar', '~> 6.0'
   pod 'HarvestAPI', :path => '~/proj/HarvestAPI/'
   pod 'SnapKit'
 
