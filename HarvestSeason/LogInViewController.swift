@@ -24,7 +24,7 @@ struct ErrorLogging {
     }
 
     static func log(_ error: Error) {
-
+        debugPrint("\(error)")
     }
 
     static func log(_ error: HarvestAPI.API.Error) -> Void {

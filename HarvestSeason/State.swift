@@ -18,9 +18,9 @@ struct State {
     let api: APIType
     let user: Model.User
     let projects: [Model.Project]
-    let days: [Date: Model.Day]
+    let days: [String: Model.Day]
 
-    init(api: APIType, user: Model.User, projects: [Model.Project], days: [Date: Model.Day]) {
+    init(api: APIType, user: Model.User, projects: [Model.Project], days: [String: Model.Day]) {
         self.api = api
         self.user = user
         self.projects = projects
@@ -30,7 +30,7 @@ struct State {
     func new(api: APIType? = nil,
              user: Model.User? = nil,
              projects: [Model.Project]? = nil,
-             days: [Date: Model.Day]? = nil
+             days: [String: Model.Day]? = nil
     ) -> State {
         return State(
             api: api ?? self.api,
@@ -43,7 +43,7 @@ struct State {
     func newDay(at date: Date, day: Model.Day) -> State {
         var days = self.days
         
-        days.updateValue(day, forKey: date)
+        days.updateValue(day, forKey: Model.Day.dateFormatter.string(from: date))
 
         return new(days: days)
     }

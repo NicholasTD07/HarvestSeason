@@ -11,13 +11,13 @@
 		5DB18D28B6F0AC6F3E906234 /* Pods_HarvestSeasonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3E942FBD653BF653356236 /* Pods_HarvestSeasonTests.framework */; };
 		6C64B9D41E074B53004576A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9D31E074B53004576A9 /* AppDelegate.swift */; };
 		6C64B9D61E074B53004576A9 /* UnauthedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9D51E074B53004576A9 /* UnauthedViewController.swift */; };
-		6C64B9DB1E074B53004576A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C64B9DA1E074B53004576A9 /* Assets.xcassets */; };
 		6C64B9DE1E074B53004576A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C64B9DC1E074B53004576A9 /* LaunchScreen.storyboard */; };
 		6C64B9E91E074B53004576A9 /* HarvestSeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9E81E074B53004576A9 /* HarvestSeasonTests.swift */; };
 		6C64B9F41E074B53004576A9 /* HarvestSeasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64B9F31E074B53004576A9 /* HarvestSeasonUITests.swift */; };
 		6C7798F01E08E7EB008C017D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7798EF1E08E7EB008C017D /* LogInViewController.swift */; };
 		6C7798F21E08ED47008C017D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7798F11E08ED47008C017D /* State.swift */; };
 		6C7798F41E08F8EB008C017D /* AuthedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7798F31E08F8EB008C017D /* AuthedViewController.swift */; };
+		6C7798F81E0A1903008C017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7798F71E0A1903008C017D /* Assets.xcassets */; };
 		6CA57BA91E08BA7000E95B3C /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA57BA81E08BA7000E95B3C /* main.storyboard */; };
 		6CA57BAB1E08CF2500E95B3C /* CalendarDayCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA57BAA1E08CF2500E95B3C /* CalendarDayCellView.xib */; };
 		6CA57BAD1E08CF9D00E95B3C /* CalendarDayCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA57BAC1E08CF9D00E95B3C /* CalendarDayCellView.swift */; };
@@ -49,7 +49,6 @@
 		6C64B9D01E074B53004576A9 /* HarvestSeason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarvestSeason.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C64B9D31E074B53004576A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C64B9D51E074B53004576A9 /* UnauthedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthedViewController.swift; sourceTree = "<group>"; };
-		6C64B9DA1E074B53004576A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C64B9DD1E074B53004576A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C64B9DF1E074B53004576A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C64B9E41E074B53004576A9 /* HarvestSeasonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarvestSeasonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +60,7 @@
 		6C7798EF1E08E7EB008C017D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		6C7798F11E08ED47008C017D /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		6C7798F31E08F8EB008C017D /* AuthedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthedViewController.swift; sourceTree = "<group>"; };
+		6C7798F71E0A1903008C017D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CA57BA81E08BA7000E95B3C /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		6CA57BAA1E08CF2500E95B3C /* CalendarDayCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarDayCellView.xib; path = ../CalendarDayCellView.xib; sourceTree = "<group>"; };
 		6CA57BAC1E08CF9D00E95B3C /* CalendarDayCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayCellView.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				6CA57BAC1E08CF9D00E95B3C /* CalendarDayCellView.swift */,
 				6CA57BA81E08BA7000E95B3C /* main.storyboard */,
 				6C64B9DC1E074B53004576A9 /* LaunchScreen.storyboard */,
-				6C64B9DA1E074B53004576A9 /* Assets.xcassets */,
+				6C7798F71E0A1903008C017D /* Assets.xcassets */,
 				6C64B9DF1E074B53004576A9 /* Info.plist */,
 			);
 			path = HarvestSeason;
@@ -298,7 +298,7 @@
 			files = (
 				6C64B9DE1E074B53004576A9 /* LaunchScreen.storyboard in Resources */,
 				6CA57BA91E08BA7000E95B3C /* main.storyboard in Resources */,
-				6C64B9DB1E074B53004576A9 /* Assets.xcassets in Resources */,
+				6C7798F81E0A1903008C017D /* Assets.xcassets in Resources */,
 				6CA57BAB1E08CF2500E95B3C /* CalendarDayCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

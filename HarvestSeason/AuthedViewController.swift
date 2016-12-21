@@ -85,7 +85,20 @@ extension AuthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarVi
         // Setup Cell text
         myCustomCell.dayLabel.text = cellState.text
 
-        calendar.
+        myCustomCell.icon.image = nil
+
+        let dateString = Model.Day.dateFormatter.string(from: date)
+        if let day = store.state.days[dateString] {
+            let hours = day.hours()
+
+            if hours >= 7.6 {
+                myCustomCell.icon.image = #imageLiteral(resourceName: "dot-green")
+            } else if hours > 0 {
+                myCustomCell.icon.image = #imageLiteral(resourceName: "dot-gray")
+            } else { // <= 0
+                myCustomCell.icon.image = #imageLiteral(resourceName: "dot-empty")
+            }
+        }
 
         handleCellTextColor(view: cell, cellState: cellState)
         handleCellSelection(view: cell, cellState: cellState)
@@ -173,10 +186,10 @@ extension AuthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarVi
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy MM dd"
 
-        let startDate = formatter.date(from: "2016 02 01")! // You can use date generated from a formatter
+//        let startDate = formatter.date(from: "2016 02 01")! // You can use date generated from a formatter
         let endDate = Date()                                // You can also use dates created from this function
         let parameters = ConfigurationParameters(
-            startDate: startDate,
+            startDate: endDate,
             endDate: endDate,
             numberOfRows: 6, // Only 1, 2, 3, & 6 are allowed
             calendar: Calendar.current,

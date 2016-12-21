@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gQ-Fx-shB">
-                    <rect key="frame" x="75" y="25" width="25" height="50"/>
+                    <rect key="frame" x="75" y="26" width="25" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z11-f6-6ce">
@@ -38,6 +38,13 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-UU-K2N">
+                    <rect key="frame" x="45" y="60" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="6vu-VU-adx"/>
+                        <constraint firstAttribute="width" constant="10" id="Ien-SP-G7U"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.17254901960784313" green="0.10588235294117647" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -48,8 +55,10 @@
                 <constraint firstItem="jE5-Vb-plo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gmh-gX-Way"/>
                 <constraint firstItem="Z11-f6-6ce" firstAttribute="width" secondItem="QU0-zz-Yf5" secondAttribute="width" multiplier="0.5" id="haO-JR-Wtm"/>
                 <constraint firstItem="7gQ-Fx-shB" firstAttribute="height" secondItem="QU0-zz-Yf5" secondAttribute="height" id="j2s-N4-QmS"/>
+                <constraint firstItem="0hb-UU-K2N" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="j4h-Ue-QUF"/>
                 <constraint firstItem="QU0-zz-Yf5" firstAttribute="centerX" secondItem="jE5-Vb-plo" secondAttribute="centerX" id="jJd-cI-v8d"/>
                 <constraint firstItem="Z11-f6-6ce" firstAttribute="centerY" secondItem="QU0-zz-Yf5" secondAttribute="centerY" id="ogW-kJ-abn"/>
+                <constraint firstItem="0hb-UU-K2N" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="15" id="rRh-P7-Q7v"/>
                 <constraint firstItem="7gQ-Fx-shB" firstAttribute="width" secondItem="QU0-zz-Yf5" secondAttribute="width" multiplier="0.5" id="tQS-wt-NIv"/>
                 <constraint firstItem="QU0-zz-Yf5" firstAttribute="centerY" secondItem="jE5-Vb-plo" secondAttribute="centerY" id="v37-Iv-WDz"/>
                 <constraint firstItem="Z11-f6-6ce" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yqT-rR-zP7"/>
@@ -57,6 +66,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="dayLabel" destination="jE5-Vb-plo" id="Isy-5W-iuw"/>
+                <outlet property="icon" destination="0hb-UU-K2N" id="BNo-pP-muc"/>
                 <outlet property="leftSelected" destination="Z11-f6-6ce" id="SHZ-IK-x1n"/>
                 <outlet property="rightSelected" destination="7gQ-Fx-shB" id="sGV-pJ-Jt2"/>
                 <outlet property="selectedView" destination="QU0-zz-Yf5" id="kka-LG-9jE"/>

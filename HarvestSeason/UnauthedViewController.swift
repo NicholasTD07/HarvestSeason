@@ -25,6 +25,11 @@ class UnauthedViewController: UIViewController {
             guard state != nil else { return }
             guard let `self` = self else { return }
 
+            if let p = self.presentedViewController,
+                let _ = p as? AuthedViewController {
+                return
+            }
+
             let auth = UIStoryboard(name: "main", bundle: nil).instantiateViewController(withIdentifier: "auth")
 
             self.dismiss(animated: true, completion: nil)
