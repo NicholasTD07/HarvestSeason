@@ -18,8 +18,13 @@ class AuthedViewController: UIViewController {
     @IBOutlet weak var welcomeUser: UILabel!
     @IBOutlet weak var loggedInUser: UILabel!
 
-    @IBOutlet weak var check: UIButton!
-    @IBOutlet weak var fill: UIButton!
+    @IBAction func check(_ sender: Any) {
+
+    }
+
+    @IBAction func fill(_ sender: Any) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,20 +48,23 @@ class AuthedViewController: UIViewController {
 
         calendarView.dataSource = self
         calendarView.delegate = self
-        calendarView.registerCellViewXib(file: String(describing: CalendarDayCellView.self)) // Registering your cell is manditory
+
+        calendarView.allowsMultipleSelection  = true
+        calendarView.rangeSelectionWillBeUsed = true
 
         calendarView.cellInset = CGPoint(x: 0, y: 0) // default is (3,3)
+
+        calendarView.registerCellViewXib(file: String(describing: CalendarDayCellView.self)) // Registering your cell is manditory
     }
 }
-
-private let textColorForThisMonth = UIColor(colorWithHexValue: 0xECEAED)
-private let textColorForNotThisMonth = UIColor(colorWithHexValue: 0x574865)
 
 typealias CellView = CalendarDayCellView
 
 let white = UIColor(colorWithHexValue: 0xECEAED)
 let darkPurple = UIColor(colorWithHexValue: 0x3A284C)
 let dimPurple = UIColor(colorWithHexValue: 0x574865)
+
+private let calendar = Calendar.current
 
 extension AuthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
@@ -67,16 +75,53 @@ extension AuthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarVi
 
         handleCellTextColor(view: cell, cellState: cellState)
         handleCellSelection(view: cell, cellState: cellState)
+        handleCellSecetedView(view: cell, cellState: cellState)
     }
 
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
         handleCellSelection(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
+        handleCellSecetedView(view: cell, cellState: cellState)
     }
 
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
         handleCellSelection(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
+        handleCellSecetedView(view: cell, cellState: cellState)
+    }
+
+    func handleCellSecetedView(view: JTAppleDayCellView?, cellState: CellState) {
+        guard let myCustomCell = view as? CellView  else {
+            return
+        }
+
+        func show(_ isShowing: Bool = true, view: UIView) {
+            view.isHidden = !isShowing
+            view.backgroundColor = isShowing ? #colorLiteral(red: 0.9881840348, green: 0.7945293188, blue: 0.2451312542, alpha: 1) : nil
+        }
+
+        switch cellState.selectedPosition() {
+        case .full:
+            show(false, view: myCustomCell.leftSelected)
+            show(true, view: myCustomCell.selectedView)
+            show(false, view: myCustomCell.rightSelected)
+        case .left:
+            show(false, view: myCustomCell.leftSelected)
+            show(true, view: myCustomCell.selectedView)
+            show(true, view: myCustomCell.rightSelected)
+        case .right:
+            show(true, view: myCustomCell.leftSelected)
+            show(true, view: myCustomCell.selectedView)
+            show(false, view: myCustomCell.rightSelected)
+        case .middle:
+            show(true, view: myCustomCell.leftSelected)
+            show(false, view: myCustomCell.selectedView)
+            show(true, view: myCustomCell.rightSelected)
+        case .none:
+            show(false, view: myCustomCell.leftSelected)
+            show(false, view: myCustomCell.selectedView)
+            show(false, view: myCustomCell.rightSelected)
+        }
     }
 
     // Function to handle the text color of the calendar
@@ -110,15 +155,16 @@ extension AuthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarVi
         }
     }
 
-    func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
+    func configureCalendar(_ calendarView: JTAppleCalendarView) -> ConfigurationParameters {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy MM dd"
 
         let startDate = formatter.date(from: "2016 02 01")! // You can use date generated from a formatter
         let endDate = Date()                                // You can also use dates created from this function
-        let parameters = ConfigurationParameters(startDate: startDate,
-                                                 endDate: endDate,
-                                                 numberOfRows: 6, // Only 1, 2, 3, & 6 are allowed
+        let parameters = ConfigurationParameters(
+            startDate: startDate,
+            endDate: endDate,
+            numberOfRows: 6, // Only 1, 2, 3, & 6 are allowed
             calendar: Calendar.current,
             generateInDates: .forAllMonths,
             generateOutDates: .tillEndOfGrid,

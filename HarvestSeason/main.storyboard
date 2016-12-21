@@ -24,14 +24,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXj-h5-TVq" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
-                                <rect key="frame" x="16" y="161.5" width="343" height="343"/>
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RXj-h5-TVq" secondAttribute="height" multiplier="1:1" id="2pw-98-fzP"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZk-q1-iUk">
-                                <rect key="frame" x="94" y="20" width="187" height="141.5"/>
+                                <rect key="frame" x="94" y="20" width="187" height="142"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment>
@@ -51,10 +51,10 @@ fill up it in 1-click!
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxI-90-mkQ">
-                                <rect key="frame" x="16" y="504.5" width="343" height="132.5"/>
+                                <rect key="frame" x="16" y="505" width="343" height="132"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kar-z2-9lQ">
-                                        <rect key="frame" x="0.0" y="43.5" width="171.5" height="47"/>
+                                        <rect key="frame" x="0.0" y="43" width="172" height="47"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment>
@@ -120,7 +120,7 @@ Timetable</string>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WBm-IF-V4y">
-                                        <rect key="frame" x="171.5" y="43" width="171.5" height="47"/>
+                                        <rect key="frame" x="172" y="43" width="171" height="47"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment>
@@ -287,16 +287,16 @@ Timetable</string>
                                 <rect key="frame" x="0.0" y="146" width="375" height="375"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P9w-tU-eOs">
-                                        <rect key="frame" x="18" y="176.5" width="339" height="21"/>
+                                        <rect key="frame" x="18" y="177" width="339" height="21"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAD-y4-Tl5">
-                                        <rect key="frame" x="0.0" y="197.5" width="375" height="177.5"/>
+                                        <rect key="frame" x="0.0" y="198" width="375" height="177"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uGo-Br-kpM">
-                                                <rect key="frame" x="18" y="78" width="339" height="21"/>
+                                                <rect key="frame" x="18" y="79" width="339" height="21"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -311,10 +311,10 @@ Timetable</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sp-bq-4Mw">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="176.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="177"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EoK-4A-PIB">
-                                                <rect key="frame" x="18" y="77.5" width="339" height="21"/>
+                                                <rect key="frame" x="18" y="78" width="339" height="21"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -347,7 +347,7 @@ Timetable</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6d-sc-Hlg">
-                                <rect key="frame" x="96" y="52" width="182.5" height="86"/>
+                                <rect key="frame" x="96" y="52" width="183" height="86"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Some bull-shit to
@@ -362,7 +362,7 @@ happily</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCa-aG-hUE">
-                                <rect key="frame" x="138" y="521" width="98" height="55"/>
+                                <rect key="frame" x="139" y="521" width="98" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
@@ -414,7 +414,7 @@ happily</string>
                                 <rect key="frame" x="16" y="505" width="343" height="141"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrS-ch-VJz">
-                                        <rect key="frame" x="0.0" y="47.5" width="171.5" height="47"/>
+                                        <rect key="frame" x="0.0" y="48" width="172" height="47"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment>
@@ -478,9 +478,12 @@ Timetable</string>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="check:" destination="3GO-Wi-Mxg" eventType="touchUpInside" id="tt0-t9-VOw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSP-WP-yG9">
-                                        <rect key="frame" x="171.5" y="47.5" width="171.5" height="47"/>
+                                        <rect key="frame" x="172" y="48" width="171" height="47"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment>
@@ -583,6 +586,9 @@ Timetable</string>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="fill:" destination="3GO-Wi-Mxg" eventType="touchUpInside" id="VBe-Un-1zu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -643,8 +649,6 @@ John Smith</string>
                     </view>
                     <connections>
                         <outlet property="calendarView" destination="APq-Vo-db9" id="HS6-Bg-1ir"/>
-                        <outlet property="check" destination="BrS-ch-VJz" id="5g3-Mj-VR4"/>
-                        <outlet property="fill" destination="oSP-WP-yG9" id="wKE-MD-M7I"/>
                         <outlet property="loggedInUser" destination="Q40-Zm-ZPe" id="C6f-H7-Bwe"/>
                         <outlet property="welcomeUser" destination="T8V-l2-H3n" id="a5f-az-jQP"/>
                     </connections>

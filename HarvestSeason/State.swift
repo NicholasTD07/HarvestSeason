@@ -46,10 +46,6 @@ struct Action {
             }
         }
     }
-
-//    private func update(_ api: APIType, user: Model.User, projects: [Model.Project]) {
-//
-//    }
 }
 
 class Store<State> {

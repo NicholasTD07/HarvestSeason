@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,8 +16,16 @@
             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gQ-Fx-shB">
+                    <rect key="frame" x="75" y="25" width="25" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z11-f6-6ce">
+                    <rect key="frame" x="0.0" y="26" width="25" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QU0-zz-Yf5">
-                    <rect key="frame" x="25" y="25.5" width="50" height="50"/>
+                    <rect key="frame" x="25" y="26" width="50" height="50"/>
                     <color key="backgroundColor" red="0.98039215686274506" green="0.75686274509803919" blue="0.19215686274509805" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="Lao-nZ-0qX"/>
@@ -32,14 +41,24 @@
             </subviews>
             <color key="backgroundColor" red="0.17254901960784313" green="0.10588235294117647" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="7gQ-Fx-shB" firstAttribute="centerY" secondItem="QU0-zz-Yf5" secondAttribute="centerY" id="32x-d3-FpT"/>
+                <constraint firstItem="Z11-f6-6ce" firstAttribute="height" secondItem="QU0-zz-Yf5" secondAttribute="height" id="Div-Kw-euP"/>
+                <constraint firstAttribute="trailing" secondItem="7gQ-Fx-shB" secondAttribute="trailing" id="QTS-yQ-X4z"/>
                 <constraint firstItem="jE5-Vb-plo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gb4-gb-Rti"/>
                 <constraint firstItem="jE5-Vb-plo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gmh-gX-Way"/>
+                <constraint firstItem="Z11-f6-6ce" firstAttribute="width" secondItem="QU0-zz-Yf5" secondAttribute="width" multiplier="0.5" id="haO-JR-Wtm"/>
+                <constraint firstItem="7gQ-Fx-shB" firstAttribute="height" secondItem="QU0-zz-Yf5" secondAttribute="height" id="j2s-N4-QmS"/>
                 <constraint firstItem="QU0-zz-Yf5" firstAttribute="centerX" secondItem="jE5-Vb-plo" secondAttribute="centerX" id="jJd-cI-v8d"/>
+                <constraint firstItem="Z11-f6-6ce" firstAttribute="centerY" secondItem="QU0-zz-Yf5" secondAttribute="centerY" id="ogW-kJ-abn"/>
+                <constraint firstItem="7gQ-Fx-shB" firstAttribute="width" secondItem="QU0-zz-Yf5" secondAttribute="width" multiplier="0.5" id="tQS-wt-NIv"/>
                 <constraint firstItem="QU0-zz-Yf5" firstAttribute="centerY" secondItem="jE5-Vb-plo" secondAttribute="centerY" id="v37-Iv-WDz"/>
+                <constraint firstItem="Z11-f6-6ce" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yqT-rR-zP7"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="dayLabel" destination="jE5-Vb-plo" id="Isy-5W-iuw"/>
+                <outlet property="leftSelected" destination="Z11-f6-6ce" id="SHZ-IK-x1n"/>
+                <outlet property="rightSelected" destination="7gQ-Fx-shB" id="sGV-pJ-Jt2"/>
                 <outlet property="selectedView" destination="QU0-zz-Yf5" id="kka-LG-9jE"/>
             </connections>
             <point key="canvasLocation" x="-51" y="-205"/>

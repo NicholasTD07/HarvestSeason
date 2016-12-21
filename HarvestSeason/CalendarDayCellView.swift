@@ -9,6 +9,8 @@
 import JTAppleCalendar
 
 class CalendarDayCellView: JTAppleDayCellView {
+    @IBOutlet weak var leftSelected: UIView!
     @IBOutlet var dayLabel: UILabel!
     @IBOutlet var selectedView: UIView!
+    @IBOutlet weak var rightSelected: UIView!
 }
