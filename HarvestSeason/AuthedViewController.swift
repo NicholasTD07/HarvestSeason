@@ -19,11 +19,17 @@ class AuthedViewController: UIViewController {
     @IBOutlet weak var loggedInUser: UILabel!
 
     @IBAction func check(_ sender: Any) {
+        guard !calendarView.selectedDates.isEmpty else {
+            ErrorLogging.log(ErrorLogging.Error.ui(.warning(message: "Please select dates by tapping the date on calendar")))
 
+            return
+        }
+
+        action.days(calendarView.selectedDates)
     }
 
     @IBAction func fill(_ sender: Any) {
-        
+
     }
 
     override func viewDidLoad() {
@@ -44,6 +50,12 @@ class AuthedViewController: UIViewController {
             )
 
             self.loggedInUser.text = "Logged in as \(state.user.name)"
+        }
+
+        store.subscribe { [weak self] state in
+            guard let `self` = self else { return }
+
+            self.calendarView.reloadData()
         }
 
         calendarView.dataSource = self
@@ -67,11 +79,13 @@ let dimPurple = UIColor(colorWithHexValue: 0x574865)
 private let calendar = Calendar.current
 
 extension AuthedViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
-    func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
+    func calendar(_ calendarView: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
         let myCustomCell = cell as! CellView
 
         // Setup Cell text
         myCustomCell.dayLabel.text = cellState.text
+
+        calendar.
 
         handleCellTextColor(view: cell, cellState: cellState)
         handleCellSelection(view: cell, cellState: cellState)

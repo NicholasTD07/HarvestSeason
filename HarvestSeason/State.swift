@@ -18,11 +18,34 @@ struct State {
     let api: APIType
     let user: Model.User
     let projects: [Model.Project]
+    let days: [Date: Model.Day]
 
-    init(api: APIType, user: Model.User, projects: [Model.Project]) {
+    init(api: APIType, user: Model.User, projects: [Model.Project], days: [Date: Model.Day]) {
         self.api = api
         self.user = user
         self.projects = projects
+        self.days = days
+    }
+
+    func new(api: APIType? = nil,
+             user: Model.User? = nil,
+             projects: [Model.Project]? = nil,
+             days: [Date: Model.Day]? = nil
+    ) -> State {
+        return State(
+            api: api ?? self.api,
+            user: user ?? self.user,
+            projects: projects ?? self.projects,
+            days: days ?? self.days
+        )
+    }
+
+    func newDay(at date: Date, day: Model.Day) -> State {
+        var days = self.days
+        
+        days.updateValue(day, forKey: date)
+
+        return new(days: days)
     }
 }
 
@@ -40,8 +63,20 @@ struct Action {
             result.error(ErrorLogging.log) { user in
                 api.projects { result in
                     result.error(ErrorLogging.log) { projects in
-                        self.stateUpdater(.init(api: api, user: user, projects: projects))
+                        let state = State(api: api, user: user, projects: projects, days: [:])
+                        self.stateUpdater(state)
                     }
+                }
+            }
+        }
+    }
+
+    func days(_ days: [Date]) {
+        store.state.api.days(days) { date in
+            return { result in
+                result.error(ErrorLogging.log) { day in
+                    let state = store.state.newDay(at: date, day: day)
+                    self.stateUpdater(state)
                 }
             }
         }
